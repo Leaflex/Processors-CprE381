@@ -1,4 +1,4 @@
-# Single cycle, software multi-cycle, and hardware multi-cycle processor design and comparative analysis
+# Comparative Perforamnce Analysis of Single and Multi-Cycle Processors
 Git repo containing code and documentation for Alexander Somers and Remmington Greatline's single and multi cycle processors design and analysis project. 
 
 ## Project Overview:
