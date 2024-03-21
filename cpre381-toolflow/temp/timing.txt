@@ -1,0 +1,107 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 25.07mhz Clk Constraint: 20.00ns Slack: -19.88ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : dffg_N:PC_Register|s_Q[8]
+ To Node      : reg_file:MIPS_Register|dffg_N:\G1:4:dffg_N_i|s_Q[24]
+ Launch Clock : iCLK
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+      0.000      0.000           launch edge time
+      3.059      3.059  R        clock network delay
+      3.291      0.232     uTco  dffg_N:PC_Register|s_Q[8]
+      3.291      0.000 FF  CELL  PC_Register|s_Q[8]|q
+      3.639      0.348 FF    IC  s_IMemAddr[8]~3|datad
+      3.764      0.125 FF  CELL  s_IMemAddr[8]~3|combout
+      5.990      2.226 FF    IC  IMem|ram~43282|datad
+      6.140      0.150 FR  CELL  IMem|ram~43282|combout
+      6.860      0.720 RR    IC  IMem|ram~43283|datad
+      6.999      0.139 RF  CELL  IMem|ram~43283|combout
+      8.478      1.479 FF    IC  IMem|ram~43284|datac
+      8.759      0.281 FF  CELL  IMem|ram~43284|combout
+      8.990      0.231 FF    IC  IMem|ram~43285|datac
+      9.271      0.281 FF  CELL  IMem|ram~43285|combout
+      9.497      0.226 FF    IC  IMem|ram~43296|datad
+      9.647      0.150 FR  CELL  IMem|ram~43296|combout
+     12.487      2.840 RR    IC  IMem|ram~43339|datab
+     12.889      0.402 RR  CELL  IMem|ram~43339|combout
+     13.291      0.402 RR    IC  IMem|ram~43382|datab
+     13.725      0.434 RF  CELL  IMem|ram~43382|combout
+     13.953      0.228 FF    IC  IMem|ram~43553|datad
+     14.078      0.125 FF  CELL  IMem|ram~43553|combout
+     14.304      0.226 FF    IC  IMem|ram~43724|datad
+     14.454      0.150 FR  CELL  IMem|ram~43724|combout
+     16.207      1.753 RR    IC  MIPS_Register|mux_2|Mux3~2|datad
+     16.362      0.155 RR  CELL  MIPS_Register|mux_2|Mux3~2|combout
+     16.597      0.235 RR    IC  MIPS_Register|mux_2|Mux3~3|dataa
+     17.014      0.417 RR  CELL  MIPS_Register|mux_2|Mux3~3|combout
+     21.633      4.619 RR    IC  MIPS_Register|mux_2|Mux3~11|dataa
+     22.030      0.397 RR  CELL  MIPS_Register|mux_2|Mux3~11|combout
+     22.233      0.203 RR    IC  MIPS_Register|mux_2|Mux3~16|datad
+     22.388      0.155 RR  CELL  MIPS_Register|mux_2|Mux3~16|combout
+     23.003      0.615 RR    IC  MIPS_Register|mux_2|Mux3~19|datad
+     23.158      0.155 RR  CELL  MIPS_Register|mux_2|Mux3~19|combout
+     24.108      0.950 RR    IC  ALU1|SHIFTER1|ShiftRight0~24|datac
+     24.393      0.285 RR  CELL  ALU1|SHIFTER1|ShiftRight0~24|combout
+     24.605      0.212 RR    IC  ALU1|SHIFTER1|ShiftRight0~39|datad
+     24.760      0.155 RR  CELL  ALU1|SHIFTER1|ShiftRight0~39|combout
+     26.074      1.314 RR    IC  ALU1|SHIFTER1|ShiftRight1~62|datad
+     26.229      0.155 RR  CELL  ALU1|SHIFTER1|ShiftRight1~62|combout
+     26.465      0.236 RR    IC  ALU1|SHIFTER1|ShiftRight1~63|datad
+     26.620      0.155 RR  CELL  ALU1|SHIFTER1|ShiftRight1~63|combout
+     26.849      0.229 RR    IC  ALU1|SHIFTER1|ShiftRight1~64|datad
+     27.004      0.155 RR  CELL  ALU1|SHIFTER1|ShiftRight1~64|combout
+     27.232      0.228 RR    IC  ALU1|SHIFTER1|o_Output[7]~36|datad
+     27.387      0.155 RR  CELL  ALU1|SHIFTER1|o_Output[7]~36|combout
+     27.591      0.204 RR    IC  ALU1|SHIFTER1|o_Output[7]~37|datad
+     27.730      0.139 RF  CELL  ALU1|SHIFTER1|o_Output[7]~37|combout
+     27.957      0.227 FF    IC  ALU1|SHIFTER1|o_Output[7]~38|datad
+     28.082      0.125 FF  CELL  ALU1|SHIFTER1|o_Output[7]~38|combout
+     28.309      0.227 FF    IC  ALU1|MUX_ALU_OUT3|\G_NBit_MUX:7:MUXI|g_stage4|o_F~2|datad
+     28.434      0.125 FF  CELL  ALU1|MUX_ALU_OUT3|\G_NBit_MUX:7:MUXI|g_stage4|o_F~2|combout
+     30.760      2.326 FF    IC  DMem|ram~52898|datab
+     31.185      0.425 FF  CELL  DMem|ram~52898|combout
+     31.412      0.227 FF    IC  DMem|ram~52899|datad
+     31.562      0.150 FR  CELL  DMem|ram~52899|combout
+     36.128      4.566 RR    IC  DMem|ram~52902|datac
+     36.415      0.287 RR  CELL  DMem|ram~52902|combout
+     36.620      0.205 RR    IC  DMem|ram~52905|datad
+     36.759      0.139 RF  CELL  DMem|ram~52905|combout
+     36.990      0.231 FF    IC  DMem|ram~52916|datac
+     37.271      0.281 FF  CELL  DMem|ram~52916|combout
+     37.498      0.227 FF    IC  DMem|ram~52927|datad
+     37.648      0.150 FR  CELL  DMem|ram~52927|combout
+     39.210      1.562 RR    IC  DMem|ram~52928|dataa
+     39.549      0.339 RR  CELL  DMem|ram~52928|combout
+     39.752      0.203 RR    IC  DMem|ram~53099|datad
+     39.907      0.155 RR  CELL  DMem|ram~53099|combout
+     40.111      0.204 RR    IC  DMem|ram~53270|datad
+     40.266      0.155 RR  CELL  DMem|ram~53270|combout
+     40.642      0.376 RR    IC  MUX_MemtoReg2|\G_NBit_MUX:24:MUXI|g_stage4|o_F~0|datad
+     40.797      0.155 RR  CELL  MUX_MemtoReg2|\G_NBit_MUX:24:MUXI|g_stage4|o_F~0|combout
+     41.002      0.205 RR    IC  MUX_MemtoReg2|\G_NBit_MUX:24:MUXI|g_stage4|o_F~1|datad
+     41.157      0.155 RR  CELL  MUX_MemtoReg2|\G_NBit_MUX:24:MUXI|g_stage4|o_F~1|combout
+     43.047      1.890 RR    IC  MIPS_Register|\G1:4:dffg_N_i|s_Q[24]~feeder|datad
+     43.202      0.155 RR  CELL  MIPS_Register|\G1:4:dffg_N_i|s_Q[24]~feeder|combout
+     43.202      0.000 RR    IC  MIPS_Register|\G1:4:dffg_N_i|s_Q[24]|d
+     43.289      0.087 RR  CELL  reg_file:MIPS_Register|dffg_N:\G1:4:dffg_N_i|s_Q[24]
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     23.399      3.399  R        clock network delay
+     23.407      0.008           clock pessimism removed
+     23.387     -0.020           clock uncertainty
+     23.405      0.018     uTsu  reg_file:MIPS_Register|dffg_N:\G1:4:dffg_N_i|s_Q[24]
+ Data Arrival Time  :    43.289
+ Data Required Time :    23.405
+ Slack              :   -19.884 (VIOLATED)
+ ===================================================================

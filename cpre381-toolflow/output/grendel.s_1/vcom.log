@@ -1,0 +1,66 @@
+QuestaSim-64 vcom 2022.2 Compiler 2022.04 Apr 25 2022
+Start time: 09:34:35 on May 04,2023
+vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd internal/testpy/tb.vhd proj/src/MIPS_types.vhd proj/src/TopLevel/signExt.vhd proj/src/TopLevel/ControlUnit.vhd proj/src/TopLevel/MIPS_Processor.vhd proj/src/TopLevel/alu_addersubtractor.vhd proj/src/TopLevel/shifter.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/org2.vhd proj/src/TopLevel/ShiftLeft2.vhd proj/src/TopLevel/decoder5t32.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/full_adder_n.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/ALU.vhd proj/src/TopLevel/mux2t1_5.vhd proj/src/TopLevel/dffg_N.vhd proj/src/TopLevel/ones_comp.vhd proj/src/TopLevel/reg_file.vhd proj/src/TopLevel/mux32t1.vhd proj/src/TopLevel/mux2t1.vhd proj/src/TopLevel/full_adder.vhd proj/src/TopLevel/mem.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package MIPS_types
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+** Warning: proj/src/MIPS_types.vhd(15): (vcom-1615) Existing package 'MIPS_types' at line 15 will be overwritten.
+-- Compiling package MIPS_types
+** Warning: proj/src/MIPS_types.vhd(29): (vcom-1615) Existing package body 'MIPS_types(body)' at line 29 will be overwritten.
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+-- Compiling entity signExt
+-- Compiling architecture dataflow of signExt
+-- Loading package NUMERIC_STD
+-- Compiling entity ControlUnit
+-- Compiling architecture behavioral of ControlUnit
+-- Loading package MIPS_types
+-- Compiling entity MIPS_Processor
+-- Compiling architecture structure of MIPS_Processor
+-- Compiling entity alu_addersubtractor
+-- Compiling architecture structural of alu_addersubtractor
+-- Compiling entity shifter
+-- Compiling architecture dataflow of shifter
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity ShiftLeft2
+-- Compiling architecture ShiftLeft2 of ShiftLeft2
+-- Compiling entity decoder5t32
+-- Compiling architecture dataflow of decoder5t32
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity full_adder_n
+-- Compiling architecture structure of full_adder_n
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Compiling entity ALU
+-- Compiling architecture hybrid of ALU
+-- Compiling entity mux2t1_5
+-- Compiling architecture structural of mux2t1_5
+-- Compiling entity dffg_N
+-- Compiling architecture mixed of dffg_N
+-- Compiling entity ones_comp
+-- Compiling architecture structure of ones_comp
+-- Compiling entity reg_file
+-- Compiling architecture structure of reg_file
+-- Compiling entity mux32t1
+-- Compiling architecture dataflow of mux32t1
+-- Compiling entity mux2t1
+-- Compiling architecture structure of mux2t1
+-- Compiling entity full_adder
+-- Compiling architecture structure of full_adder
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+End time: 09:34:35 on May 04,2023, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2
