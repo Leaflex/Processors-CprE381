@@ -17,7 +17,7 @@ Throughout this project I learned about various types of processors (I.E., singl
  - Visual Studio Code
  - Microsoft Excel
 
-## Navigation:
+## Files:
 Most relevant project files can be found in the `/cpre381-toolflow/` directory. 
  - For VHDL source files used for the main components of our project, navigate to `/cpre381-toolflow/proj/src/TopLevel`. 
  - For the VHDL testbenches used for testing our processors in QuestaSim, navigate to `/cpre381-toolflow/proj/test`.

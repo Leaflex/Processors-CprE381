@@ -1,0 +1,48 @@
+# //  Questa Sim-64
+# //  Version 2022.2 linux_x86_64 Apr 25 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project Questa_sw
+add wave -position end  vsim:/tb/MyMips/iCLK
+add wave -position end  vsim:/tb/MyMips/IMem/q
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/i_CLK
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/i_RST
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/i_WrD
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/i_WrAddr
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/i_RdS1
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/i_RdS2
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/i_WrE
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/o_RdD1
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/o_RdD2
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/s_Q_reg
+add wave -position end  vsim:/tb/MyMips/REGISTER_FILE/s_F_decode
+add wave -position end  vsim:/tb/MyMips/MUX_ALUSrc/i_S
+add wave -position end  vsim:/tb/MyMips/MUX_ALUSrc/i_D0
+add wave -position end  vsim:/tb/MyMips/MUX_ALUSrc/i_D1
+add wave -position end  vsim:/tb/MyMips/MUX_ALUSrc/o_O
+add wave -position 3  vsim:/tb/MyMips/REGISTER_FILE/i_WrD
+add wave -position 4  vsim:/tb/MyMips/REGISTER_FILE/i_WrAddr
+add wave -position 5  vsim:/tb/MyMips/REGISTER_FILE/i_RdS1
+add wave -position 6  vsim:/tb/MyMips/REGISTER_FILE/i_RdS2
+add wave -position 7  vsim:/tb/MyMips/REGISTER_FILE/i_WrE
+add wave -position 8  vsim:/tb/MyMips/REGISTER_FILE/o_RdD1
+add wave -position 9  vsim:/tb/MyMips/REGISTER_FILE/o_RdD2
+add wave -position end  vsim:/tb/MyMips/ALU0/i_Data1
+add wave -position end  vsim:/tb/MyMips/ALU0/i_Data2
+add wave -position end  vsim:/tb/MyMips/ALU0/o_Zero
+add wave -position end  vsim:/tb/MyMips/ALU0/o_Out
+add wave -position end  vsim:/tb/MyMips/ALU0/o_Overflow
+add wave -position end  vsim:/tb/MyMips/CONTROL_UNIT/o_Ctrl_Unt
+add wave -position end  vsim:/tb/MyMips/PC_Register/i_D
+add wave -position end  vsim:/tb/MyMips/PC_Register/o_Q
+find drivers -source -time {57 ns} -cause vsim:/tb/MyMips/MUX_ALUSrc/o_O

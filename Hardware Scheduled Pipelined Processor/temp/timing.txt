@@ -1,0 +1,103 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 54.30mhz Clk Constraint: 20.00ns Slack: 1.58ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : ID_EX_reg:ID_EX|dffg_N:x7|s_Q[9]
+ To Node      : EX_MEM_reg:EX_MEM|dffg_N:x1_5|s_Q[0]
+ Launch Clock : iCLK
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+      0.000      0.000           launch edge time
+      3.125      3.125  R        clock network delay
+      3.357      0.232     uTco  ID_EX_reg:ID_EX|dffg_N:x7|s_Q[9]
+      3.357      0.000 FF  CELL  ID_EX|x7|s_Q[9]|q
+      4.714      1.357 FF    IC  ALU0|Mux0~0|datac
+      4.995      0.281 FF  CELL  ALU0|Mux0~0|combout
+      5.253      0.258 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:0:full_adderlist|and_1|o_F|datad
+      5.378      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:0:full_adderlist|and_1|o_F|combout
+      5.661      0.283 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:1:full_adderlist|or_1|o_F~0|datab
+      6.086      0.425 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:1:full_adderlist|or_1|o_F~0|combout
+      6.507      0.421 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:2:full_adderlist|or_1|o_F~0|datac
+      6.788      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:2:full_adderlist|or_1|o_F~0|combout
+      7.045      0.257 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:3:full_adderlist|or_1|o_F~0|datac
+      7.326      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:3:full_adderlist|or_1|o_F~0|combout
+      7.582      0.256 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:4:full_adderlist|or_1|o_F~0|datac
+      7.863      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:4:full_adderlist|or_1|o_F~0|combout
+      8.113      0.250 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:5:full_adderlist|or_1|o_F~0|datad
+      8.238      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:5:full_adderlist|or_1|o_F~0|combout
+      8.537      0.299 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:6:full_adderlist|or_1|o_F~0|dataa
+      8.961      0.424 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:6:full_adderlist|or_1|o_F~0|combout
+      9.218      0.257 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:7:full_adderlist|or_1|o_F~0|datac
+      9.499      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:7:full_adderlist|or_1|o_F~0|combout
+      9.748      0.249 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:8:full_adderlist|or_1|o_F~0|datad
+      9.873      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:8:full_adderlist|or_1|o_F~0|combout
+     10.171      0.298 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:9:full_adderlist|or_1|o_F~0|dataa
+     10.595      0.424 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:9:full_adderlist|or_1|o_F~0|combout
+     10.832      0.237 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:10:full_adderlist|or_1|o_F~0|datad
+     10.957      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:10:full_adderlist|or_1|o_F~0|combout
+     11.217      0.260 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:11:full_adderlist|or_1|o_F~0|datac
+     11.498      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:11:full_adderlist|or_1|o_F~0|combout
+     11.746      0.248 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:12:full_adderlist|or_1|o_F~0|datad
+     11.871      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:12:full_adderlist|or_1|o_F~0|combout
+     12.124      0.253 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:13:full_adderlist|or_1|o_F~0|datad
+     12.249      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:13:full_adderlist|or_1|o_F~0|combout
+     12.986      0.737 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:14:full_adderlist|or_1|o_F~0|datac
+     13.267      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:14:full_adderlist|or_1|o_F~0|combout
+     13.515      0.248 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:15:full_adderlist|or_1|o_F~0|datad
+     13.640      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:15:full_adderlist|or_1|o_F~0|combout
+     13.889      0.249 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:16:full_adderlist|or_1|o_F~0|datad
+     14.014      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:16:full_adderlist|or_1|o_F~0|combout
+     14.266      0.252 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:17:full_adderlist|or_1|o_F~0|datad
+     14.391      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:17:full_adderlist|or_1|o_F~0|combout
+     14.649      0.258 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:18:full_adderlist|or_1|o_F~0|datac
+     14.930      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:18:full_adderlist|or_1|o_F~0|combout
+     15.185      0.255 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:19:full_adderlist|or_1|o_F~0|datac
+     15.466      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:19:full_adderlist|or_1|o_F~0|combout
+     15.718      0.252 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:20:full_adderlist|or_1|o_F~0|datad
+     15.843      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:20:full_adderlist|or_1|o_F~0|combout
+     16.095      0.252 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:21:full_adderlist|or_1|o_F~0|datad
+     16.220      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:21:full_adderlist|or_1|o_F~0|combout
+     16.470      0.250 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:22:full_adderlist|or_1|o_F~0|datad
+     16.595      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:22:full_adderlist|or_1|o_F~0|combout
+     16.835      0.240 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:23:full_adderlist|or_1|o_F~0|datad
+     16.960      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:23:full_adderlist|or_1|o_F~0|combout
+     17.199      0.239 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:24:full_adderlist|or_1|o_F~0|datad
+     17.324      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:24:full_adderlist|or_1|o_F~0|combout
+     17.561      0.237 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:25:full_adderlist|or_1|o_F~0|datad
+     17.686      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:25:full_adderlist|or_1|o_F~0|combout
+     18.112      0.426 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:26:full_adderlist|or_1|o_F~0|datad
+     18.237      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:26:full_adderlist|or_1|o_F~0|combout
+     18.477      0.240 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:27:full_adderlist|or_1|o_F~0|datad
+     18.602      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:27:full_adderlist|or_1|o_F~0|combout
+     18.842      0.240 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:28:full_adderlist|or_1|o_F~0|datad
+     18.967      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:28:full_adderlist|or_1|o_F~0|combout
+     19.204      0.237 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:29:full_adderlist|or_1|o_F~0|datad
+     19.329      0.125 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:29:full_adderlist|or_1|o_F~0|combout
+     19.597      0.268 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:30:full_adderlist|or_1|o_F~0|datac
+     19.878      0.281 FF  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:30:full_adderlist|or_1|o_F~0|combout
+     20.106      0.228 FF    IC  ALU0|ADDER_SUBTRACTOR|\G_full_adder:31:full_adderlist|xor_2|o_F|datad
+     20.256      0.150 FR  CELL  ALU0|ADDER_SUBTRACTOR|\G_full_adder:31:full_adderlist|xor_2|o_F|combout
+     21.157      0.901 RR    IC  EX_MEM|x1_5|s_Q[0]~10|datad
+     21.312      0.155 RR  CELL  EX_MEM|x1_5|s_Q[0]~10|combout
+     21.312      0.000 RR    IC  EX_MEM|x1_5|s_Q[0]|d
+     21.399      0.087 RR  CELL  EX_MEM_reg:EX_MEM|dffg_N:x1_5|s_Q[0]
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     22.953      2.953  R        clock network delay
+     22.985      0.032           clock pessimism removed
+     22.965     -0.020           clock uncertainty
+     22.983      0.018     uTsu  EX_MEM_reg:EX_MEM|dffg_N:x1_5|s_Q[0]
+ Data Arrival Time  :    21.399
+ Data Required Time :    22.983
+ Slack              :     1.584
+ ===================================================================
