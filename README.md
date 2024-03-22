@@ -1,4 +1,4 @@
-# Comparative Perforamnce Analysis of Single and Multi-Cycle Processors
+# Comparative Perforamnce Analysis of Single Cycle, Software & Hardware Scheduled Pipelined Processors
 Git repo containing code and documentation for Alexander Somers and Remmington Greatline's single and multi cycle processors design and analysis project. 
 
 ## Project Overview:
