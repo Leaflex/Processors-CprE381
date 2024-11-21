@@ -1,5 +1,5 @@
 # Comparative Perforamnce Analysis of Single Cycle, Software & Hardware Scheduled Pipelined Processors
-Git repo containing code and documentation for Alexander Somers and Remmington Greatline's single and multi cycle processors design and analysis project. 
+Git repo containing code and documentation for Alexander Somers and Remmington Greatline's single and multi cycle processors design and analysis project. Final comparative analysis of all three processes can be found in the "Comparative Analysis of Processor Designs & Implementations.pdf" file
 
 ## Project Overview:
 This project consisted of the design and comparison of three VHDL implemented processors, a single cycle processor, a software multi-cycle processor, and a hardware multi-cycle processor, as a team of two with Remmington Greatline and myself. The processors were built from scratch using VHDL implemented gates such as ANDs, ORs, XORs, etc, as the base for components like the arithmetic logic unit (ALU) or control unit. Once built, these processors underwent extensive testing using QuestSim before a comparative analysis of performance. The metrics for this analysis were cycles per instruction, maximum cycle time, and total execution time. Additional comparisons were also made for how each processor performed on specific instructions.
